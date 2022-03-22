@@ -1,0 +1,82 @@
+*{
+    font-family: 'Kumbh Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(185, 75%, 39%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("images/bg-pattern-top.svg"), url("images/bg-pattern-bottom.svg");
+    background-position: -240px -510px, 760px 350px;
+    background-repeat: no-repeat;
+}
+.container{
+    height: 370px;
+    width:350px;
+    background-color: #fff;   
+    border-radius: 14px;
+    position: relative;
+}
+.back-image img{
+    width: 350px;
+    border-radius: 14px 14px 0 0;
+}
+.profile img{
+    border-radius: 50%;
+    border: 5px solid #fff;
+    position: absolute;
+    left: 126px;
+    top:87px;
+}
+.about{
+    text-align: center;
+    margin-top: 70px;
+}
+.about h2{
+    color:hsl(229, 23%, 23%);
+    font-size: 18px;
+    font-weight: 700;
+}
+.about span{
+    color: hsl(227, 10%, 46%);
+    font-weight: 400;
+}
+.about p{
+    color: hsl(227, 10%, 46%);
+    font-weight: 400;
+    padding-top: 8px;
+    font-size: 15px;
+}
+.line{
+    width: 350px;
+    height: 1px;
+    background-color: hsla(227, 10%, 46%, 0.301);
+    margin-top: 20px;
+}
+.stat{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 25px 20px 25px;
+
+
+}
+.stat h2{
+    font-size: 18px;
+    color: hsl(229, 23%, 23%);
+    font-weight: 700;
+}
+.stat span{
+    color: hsl(227, 10%, 46%);
+    font-size: 12px;
+    font-weight: 400;
+}
+@media (max-width:380px){
+    body{
+        background-position: 123% 190%, -16% -90%;
+    }
+}
